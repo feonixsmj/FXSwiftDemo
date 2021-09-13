@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A5D04FF2578DCA700DB8202 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5D04FE2578DCA700DB8202 /* ThirdViewController.swift */; };
 		44EE6F3D2265D2E200A37A8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE6F3C2265D2E200A37A8E /* AppDelegate.swift */; };
 		44EE6F3F2265D2E200A37A8E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE6F3E2265D2E200A37A8E /* FirstViewController.swift */; };
 		44EE6F412265D2E200A37A8E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE6F402265D2E200A37A8E /* SecondViewController.swift */; };
@@ -16,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4414A1CF2268643D00A80B78 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		3A5D04FE2578DCA700DB8202 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		44EE6F392265D2E200A37A8E /* FXSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FXSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44EE6F3C2265D2E200A37A8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44EE6F3E2265D2E200A37A8E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -41,7 +42,6 @@
 		44EE6F302265D2E200A37A8E = {
 			isa = PBXGroup;
 			children = (
-				4414A1CF2268643D00A80B78 /* MyPlayground.playground */,
 				44EE6F3B2265D2E200A37A8E /* FXSwiftDemo */,
 				44EE6F3A2265D2E200A37A8E /* Products */,
 			);
@@ -65,6 +65,7 @@
 				44EE6F452265D2E400A37A8E /* Assets.xcassets */,
 				44EE6F472265D2E400A37A8E /* LaunchScreen.storyboard */,
 				44EE6F4A2265D2E400A37A8E /* Info.plist */,
+				3A5D04FE2578DCA700DB8202 /* ThirdViewController.swift */,
 			);
 			path = FXSwiftDemo;
 			sourceTree = "<group>";
@@ -142,6 +143,7 @@
 			files = (
 				44EE6F412265D2E200A37A8E /* SecondViewController.swift in Sources */,
 				44EE6F3D2265D2E200A37A8E /* AppDelegate.swift in Sources */,
+				3A5D04FF2578DCA700DB8202 /* ThirdViewController.swift in Sources */,
 				44EE6F3F2265D2E200A37A8E /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
